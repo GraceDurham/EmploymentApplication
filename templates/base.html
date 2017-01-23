@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>
+            Welcome to 
+            <img src= "/static/logo.jpg">
+        </h1>
+        {% block content %}BODY CONTENT GOES HERE{% endblock %}
+        <footer>Copyright 2017 Squish</footer>
+    </div>
+</body>
+</html>
